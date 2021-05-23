@@ -17,7 +17,7 @@ public class App
     public static String getData(String c) throws IOException {
         StringBuffer br=new StringBuffer();
         br.append("<html><body style='text-align:centre; border:dotted; border-width:10px 4px;" +
-                "border-radius:10px 10px;background-color:yellow;'>");
+                "border-radius:10px 10px;'>");
         br.append(c.toUpperCase()+"<br>");
         String url="https://www.worldometers.info/coronavirus/country/"+c+"/";
         Document doc=Jsoup.connect(url).get();
